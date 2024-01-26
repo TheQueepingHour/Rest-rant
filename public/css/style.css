@@ -8,3 +8,8 @@ h1 {
     justify-content: center;
     background-color: #bfd7ea;
 }
+
+#homePic, #monkey404 {
+    width: 50vw;
+    max-height: 20em;
+}

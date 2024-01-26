@@ -13,8 +13,9 @@ function index(data) {
     return(
         <Def>
             <main>
-                <h1>Index Page</h1>
+                <h1>Places to Rant or Rave about</h1>
                 {placesFormatted}
+
             </main>
         </Def>
     )
