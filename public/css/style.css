@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: #0b3954;
+}
+
+#defaultBody {
+    display: flex;
+    justify-content: center;
+    background-color: #bfd7ea;
+}
