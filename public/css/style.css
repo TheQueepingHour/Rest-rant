@@ -2,13 +2,29 @@ h1 {
     text-align: center;
     color: #0b3954;
 }
+h2 {
+    text-align: center;
+    color: #ff6663;
+}
 
 #defaultBody {
     background-color: #bfd7ea;
     padding: 0.25em;
 }
 
-#homePic, #monkey404 {
+#monkey404 {
     width: 50vw;
     max-height: 20em;
+}
+
+#homeCarousel {
+    width: 50vw;
+    max-height: 20vh;
+    margin: auto;
+}
+
+#carouselImgs {
+    width: 100vw;
+    max-height: 50vh;
+    border-radius: 10%;
 }
