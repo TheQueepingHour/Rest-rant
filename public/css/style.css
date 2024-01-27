@@ -4,12 +4,16 @@ h1 {
 }
 
 #defaultBody {
-    display: flex;
-    justify-content: center;
     background-color: #bfd7ea;
+    padding: 0.25em;
 }
 
 #homePic, #monkey404 {
     width: 50vw;
     max-height: 20em;
 }
+
+/* #rantImgs {
+    width: 40vw;
+    max-height: 15em;
+} */
