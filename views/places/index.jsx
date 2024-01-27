@@ -10,7 +10,7 @@ function index(data) {
                     {place.cuisines}
                 </p>
                 <img src={place.pic} alt={place.name} className="img-fluid"/>
-                <p>
+                <p className="text-center">
                     Located in {place.city}, {place.state}
                 </p>
             </div>
