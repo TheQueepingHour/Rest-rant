@@ -29,6 +29,18 @@ main {
     max-height: 20em;
 }
 
+nav {
+    background-color: #a2c1da;
+}
+
+.nav-link {
+    color:#0b3954;
+}
+.nav-link:hover {
+    color:#ff6663;
+}
+
+
 #homeCarousel {
     width: 50vw;
     max-height: 20vh;

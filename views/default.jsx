@@ -9,6 +9,21 @@ function Def (html) {
                 <link href="/css/style.css" rel="stylesheet"/>
             </head>
             <body id="defaultBody" className='d-flex flex-column'>
+                <nav className='navbar navbar-expand-lg'>
+                    <div className='container-fluid'>
+                        <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                            <li className='nav-item'>
+                                <a href="/" className='nav-link active' aria-current="page">Home</a>
+                            </li>
+                            <li className='nav-item'>
+                                <a href="/places" className='nav-link'>Places</a>
+                            </li>
+                            <li className='nav-item'>
+                                <a href="/places/new" className='nav-link'>Add Place</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
                 {html.children}
 
                 {/* Bootstrap Script */}
