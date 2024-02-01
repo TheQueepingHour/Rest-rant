@@ -6,13 +6,13 @@ function home() {
         <Def>
             <main>
                 <h1>REST-Rant</h1>
-                <div className="container-md d-flex flex-column align-items-center mb-3">
+                <div className="d-flex flex-column align-items-center mb-3">
                     <h3 className="p3">Rant here!</h3>
                     <a href="/places">
                         <button className="btn-primary p-2">Places Page</button>
                     </a>
                 </div>
-                <div className="carousel slide" id="homeCarousel">
+                <div className="container-fluid carousel slide" id="homeCarousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src="/images/dish-white-plate.jpg" alt="Dish on white ceramic plate" className="d-block w-100" id="carouselImgs"/>
