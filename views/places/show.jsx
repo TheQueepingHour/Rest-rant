@@ -22,6 +22,16 @@ function show(data) {
                     <h2>Comments</h2>
                     <p>No comments yet!</p>
             </div>
+            <div className='d-flex flex-row justify-content-center mb-5'>
+                <a href={`/places/${data.id}/edit`} className='btn btn-warning px-2'>
+                    Edit
+                </a>
+                <form method="POST" action={`/places/${data.id}?_method=DELETE`} className='px-2'>
+                    <button type='submit' className='btn btn-danger'>
+                        Delete
+                    </button>
+                </form>
+            </div>
         </Def>
     )
 }

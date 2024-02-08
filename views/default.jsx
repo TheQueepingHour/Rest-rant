@@ -8,7 +8,7 @@ function Def (html) {
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossOrigin="anonymous"></link>
                 <link href="/css/style.css" rel="stylesheet"/>
             </head>
-            <body id="defaultBody" className='d-flex flex-column'>
+            <body id="defaultBody" className='d-flex flex-column pb-4'>
                 <nav className='navbar navbar-expand-lg'>
                     <div className='container-fluid'>
                         <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
