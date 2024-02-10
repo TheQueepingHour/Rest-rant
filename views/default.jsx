@@ -29,8 +29,9 @@ function Def (html) {
                 {/* Bootstrap Script */}
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossOrigin="anonymous"></script>
             </body>
-            <footer id="defFoot">
-                <a href="https://www.linkedin.com/in/josh-rivera-900b24195/" className='mx-auto p-1'><button className="btn btn-secondary">LinkedIn</button></a>
+            <footer id="defFoot" className='d-flex justify-content-center'>
+                <a href="https://www.linkedin.com/in/josh-rivera-900b24195/" className='p-1'><button className="btn btn-secondary">LinkedIn</button></a>
+                <span className='fw-light pt-2 px-2'>Created by Josh Rivera</span>
             </footer>
         </html>
     )
