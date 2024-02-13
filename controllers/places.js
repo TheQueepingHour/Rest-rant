@@ -28,7 +28,14 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    res.send('GET /places/:id stub')
+    db.Place.findById(req.params.id)
+    .then(place => {
+        res.render('places/show', { place })
+    })
+    .catch(err => {
+        console.log('Error: ', err)
+        res.render('error404')
+    })
 })
 
 router.get('/:id/edit', (req, res) => {
