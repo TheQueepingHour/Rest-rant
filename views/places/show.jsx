@@ -5,8 +5,11 @@ function show(data) {
     return (
         <Def>
             <main className='d-flex justify-content-evenly'>
-                <img src={data.place.pic} alt={data.place.name} className='indexImgs p-3'/>
-                <div className='d-flex flex-column align-items-center p-5'>
+                <div className='text-center col-sm-6 col-md-4 col-lg-3 p-1'>
+                    <img src={data.place.pic} alt={data.place.name} className='indexImgs p-3'/>
+                    <h3>Located in {data.place.city}, {data.place.state}</h3>
+                </div>
+                <div className='d-flex flex-column align-items-center col-sm-6 col-md-4 col-lg-3 p-5'>
                     <h1 className='text-center'>{data.place.name}</h1>
                     <div>
                         <h2>Rating</h2>
@@ -14,8 +17,12 @@ function show(data) {
                     </div>
                     <div className="text-center">
                         <h2>Description</h2>
-                        <p>Located in {data.place.city}, {data.place.state}, and serving {data.place.cuisines}</p>
-                        <p>Founded in {data.place.founded}</p>
+                        <h3>
+                            {data.place.showEstablished()}
+                        </h3>
+                        <h4>
+                            Serving {data.place.cuisines}
+                        </h4>
                     </div>
                 </div>
             </main>
