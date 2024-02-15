@@ -32,7 +32,7 @@ function new_form(data) {
                     </div>
                     <div className="form-group col-sm-6 col-md-4 col-lg-3 p-1">
                         <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" name="cuisines" required />
+                        <input className="form-control" id="cuisines" name="cuisines"  required />
                     </div>
                     <div className="form-group col-sm-6 col-md-4 col-lg-3 p-1">
                         <label htmlFor="founded">Founded Year</label>
