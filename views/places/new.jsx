@@ -1,11 +1,18 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form() {
+function new_form(data) {
+    let message = ''
+    if(data.message) {
+        message = (
+            <h4 className='alert alert-danger text-center'>{data.message}</h4>
+        )
+    }
     return (
         <Def>
             <main>
                 <h1>Create a new place</h1>
+                {message}
                 <form method="POST" action="/places" className='row mx-auto container-sm'>
                     <div className="form-group col-sm-6 col-md-4 col-lg-3 p-1">
                         <label htmlFor="name">Place Name</label>
