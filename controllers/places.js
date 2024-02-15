@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
                 message += ` ${err.errors[field].message}`
             }
             console.log('Validation error message', message)
-            res.render('places/new', { message, FormData: req.body })
+            res.render('places/new', { message })
         } else {
             console.log('Error: ', err)
             res.render('error404')
