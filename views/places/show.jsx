@@ -3,12 +3,12 @@ const Def = require('../default')
 
 function show(data) {
     let comments = (
-        <h3 className="inactive">
+        <h3 className="inactive text-center">
             No comments yet!
         </h3>
     )
     let rating = (
-        <h3 className='inactive'>
+        <h3 className='inactive text-center'>
             Not yet rated
         </h3>
     )
@@ -64,10 +64,10 @@ function show(data) {
                         </h4>
                     </div>
                     <div className='d-flex flex-row justify-content-center mb-5'>
-                        <a href={`/places/${data.id}/edit`} className='btn btn-warning px-2'>
+                        <a href={`/places/${data.place.id}/edit`} className='btn btn-warning px-2'>
                             <i className='bi bi-pencil'></i> Edit
                         </a>
-                        <form method="POST" action={`/places/${data.id}?_method=DELETE`} className='px-2'>
+                        <form method="POST" action={`/places/${data.place.id}?_method=DELETE`} className='px-2'>
                             <button type='submit' className='btn btn-danger'>
                                 <i className='bi bi-trash'></i> Delete
                             </button>
