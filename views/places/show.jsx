@@ -30,13 +30,16 @@ function show(data) {
     if(data.place.comments.length) {
         comments = data.place.comments.map(c => {
             return (
-                <div className='border rounded col-sm-6 col-md-4 col-lg-3 mx-auto'>
+                <div key={c.id} className='border rounded col-sm-6 col-md-4 col-lg-3 mx-auto'>
                     <h2 className='rant'>{ c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
                     <h4>{c.content}</h4>
                     <h3>
                         <strong>- {c.author}</strong>
                     </h3>
                     <h4>Rating: {c.stars}</h4>
+                    {/* <form method='POST' action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+                        <input type='submit' className='btn btn-danger' value='Delete comment' />
+                    </form> */}
                 </div>
             )
         })
