@@ -23,5 +23,5 @@ app.get('*', (req, res) => {
     res.render('error404')
 })
 
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`))
+app.listen(process.env.PORT)
 
